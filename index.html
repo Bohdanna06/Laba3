@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/nonModal.css">
+    <link rel="stylesheet" href="/css/adverticement.css">
     <title>Laboratorna 2</title>
 </head>
 <body>
+    <header class="header">
+        <img src="/image/brown-coffee-beans.jpg"  class="logo">
+        <nav class="navigating">
+            <a class="link">Products</a>
+            <a class="link">About us</a>
+            <a class="link">Testimonial</a>
+            <a class="link">Contact</a>
+        </nav>
+        
+    </header>
+    <main>
+        <div id="fullscreenAd" class="hidden">
+            <div class="ad-content">
+                <p>🌟 Спеціальна акція! Тільки сьогодні -50% на все! 🌟</p>
+                <button id="closeAd" class="hidden">&times;</button>
+            </div>
+        </div>
     
+    
+        <div class="first-section">
+            <h1 class="main-header"> Enjoy your Coffe with ZARA</h1>
+            <p class="main-paragraph"> Discover tranquility at Ngopi a sanctuary for unwinding,
+            where your evenings are perfected with relaxation and rich flavors</p>
+            <button class="button"> Explore Product </button>
+        </div>
+        
+        <section class="second-section">
+            <div id="coffee-gallery" > </div>
+            <div id="coffeeInfo" class="coffee-info">
+                <span id="closeBtn" class="close-btn"></span>
+            </div>
+        </section>
+        <button id="loadMore">Download more...</button>
+
+        
+        <div class="page2">
+            <h2 class="coffe-creation">In ZARA you can create your own cafe</h2>
+            <div class="coffe-buttons">
+                <button class="btn">Latte</button>
+                <button class="btn">Robusta</button>
+                <button class="btn">Arabica</button>
+            </div>
+        </div>
+        <div id="subscriptionWindow">
+            <h3>Підпишіться на наші новини!</h3>
+            <div class="buttons">
+                <button id="acceptBtn" class="button1">Прийняти</button>
+                <button id="declineBtn" class="button1">Відхилити</button>
+            </div>
+        </div>
+        <div id="thankYouMessage" class="thankYouMessage">Дякуємо за приєднання!</div>
+    </main>
+    <script src="/js/index.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/nonModalWindow.js"></script>
 </body>
 </html>
