@@ -3,12 +3,20 @@ body{
 }
 .header{
     display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     align-items: center;
-    padding: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color:  rgb(120, 54, 0);
+    gap: 130px;
 
 }
 .navigating{
-    margin-left:30% ;
+    justify-content: space-around;
+    margin-left: 100px  ;
 
 }
 .logo{
@@ -17,11 +25,12 @@ body{
     height: 50px;
 }
 .link{
+    text-decoration: none;
     padding: 15px;
     color: azure;
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid rgb(241, 213, 191); 
+    border: 1px solid rgb(120, 54, 0); 
 
 }
 .link:hover{
@@ -36,7 +45,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 50px;
-    margin: 20px;
+    margin: 100px;
     gap: 15px;
 }
 
