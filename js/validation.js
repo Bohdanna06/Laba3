@@ -45,11 +45,11 @@ document.getElementById('registerForm').onsubmit = function (e) {
 
     error.innerHTML = '<span class="success">Реєстрація успішна!</span>';
 
-    // Закрити форму через 1.5 секунди після успішної реєстрації
-    setTimeout(() => {
-        document.getElementById('registerModal').classList.add('hidden');
-        document.getElementById('registerForm').reset();
-    }, 1500);
+    
+    // setTimeout(() => {
+    //     document.getElementById('registerModal').classList.add('hidden');
+    //     document.getElementById('registerForm').reset();
+    // }, 1500);
 };
 
 // Обробка входу
