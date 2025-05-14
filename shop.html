@@ -15,14 +15,54 @@
             <a class="link">About us</a>
             <a class="link">Testimonial</a>
             <a class="link" href="/graphics.html"> Statistic</a>
+            <a href="#" id="loginIcon" title="Увійти">
+                <button class="icon" alt="Login"> Увійти </button>
+            </a>
+            <a href="#" id="registerIcon" title="Зареєструватися">
+                <button class="icon" alt="Register"> Зареєструватися </button>
+            </a>
         </nav>
-        <button class="cart-icon js-open-cart" aria-label="Open cart">
+        <button id="placeOrder" class="cart-icon js-open-cart" aria-label="Open cart">
             <img  class='cart-class ' src="/image/cart-3.svg" alt="Корзина" />
             <span class="cart-count js-cart-count">0</span>
         </button>
     </header>
+    <div id="registerModal" class="modal hidden">
+        <span class="close-button js-close-register">&times;</span>
+        <form id="registerForm">
+            <h3>Реєстрація</h3>
+            <label>Логін:</label>
+            <input type="text" id="regLogin" required>
+            
+            <label>Пароль:</label>
+            <input type="password" id="regPassword" required>
+            
+            <label>Повторіть пароль*:</label>
+            <input type="password" id="regRepeatPassword" required>
+            
+            <label>Email:</label>
+            <input type="email" id="regEmail">
+            
+            <button type="submit">Зареєструватися</button>
+            <div id="registerError" class="error"></div>
+        </form>
+    </div>
+    <div id="loginModal" class="modal hidden">
+        <span class="close-button js-close-login">&times;</span>
+        <form id="loginForm">
+            <h3>Авторизація</h3>
+            <label>Логін:</label>
+            <input type="text" id="login" required>
+    
+            <label>Пароль:</label>
+            <input type="password" id="loginPassword" required>
+    
+            <button type="submit">Увійти</button>
+            <div id="loginError" class="error"></div>
+        </form>
+    </div>
     <main class = "main ">
-
+        
         <div class=" overlay js-overlay js-close-cart"> </div>
         <div class="cart js-cart">
             <span class="close js-close-cart js-close-modal"> &times;</span>
@@ -56,5 +96,7 @@
         </main>
         <script type="module" src="/js/main.js"> </script>
         <script src="/js/news.js"></script>
+        <script src="/js/cartPopup.js"> </script>
+        <script src="/js/validation.js"></script>
 </body>
 </html>
